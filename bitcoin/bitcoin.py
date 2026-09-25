@@ -1,3 +1,5 @@
+# Get the current Bitcoin price from coincap API and calculate the taotal amount for a given number of input bitcoins though cli using argv
+
 import sys
 import requests
 
