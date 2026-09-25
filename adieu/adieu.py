@@ -1,3 +1,4 @@
+# Taking multiple names as input and put them into a farewell msg
 names = []
 
 while True:
