@@ -1,4 +1,10 @@
-# Taking multiple names as input and put them into a farewell msg
+"""
+Problem:
+Keep taking names from the user until they press Ctrl+D. Then print "Adieu, adieu, to" followed by all the names. For two names use "and" between them. For three or more, use commas and put "and" before the last name.
+
+Approach:
+I used a while loop to take the names and store them in a list. When Ctrl+D is pressed it gives an EOFError, so I handle it with try/except and break the loop. After that I check how many names are in the list and join them in the right format. Then I print the final message.
+"""
 names = []
 
 while True:
