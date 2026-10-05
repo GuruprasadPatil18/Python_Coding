@@ -1,3 +1,14 @@
+"""
+Problem:
+Ask the user for a file name and print its media type based on the extension. 
+Supported ones are gif, jpg, jpeg, png, pdf, txt and zip. If it is anything else, print application/octet-stream.
+
+Approach:
+I took the input and used lower() and strip() so capital letters and spaces don't matter. Then I looped through the list of extensions and
+checked each one with endswith(). If it matches, I print the media type and break. If nothing matches, the else part of the loop prints
+application/octet-stream.
+"""
+
 ex = input("File name: ")
 
 ex = ex.lower().strip()
