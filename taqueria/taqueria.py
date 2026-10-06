@@ -1,3 +1,13 @@
+"""
+Problem:
+Keep asking the user for items from a taqueria menu until they press Ctrl+D. After each item, print the total so far with a $ sign and 2 decimal places. 
+If the item is not on the menu, ignore it.
+
+Approach:
+I made a dictionary with the item names and their prices. In a while loop I take the input and use title() so capital letters don't matter.
+If the item is in the menu, I add its price to the total and print it. Ctrl+D gives an EOFError, so I catch it and break the loop.
+"""
+
 menu = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
