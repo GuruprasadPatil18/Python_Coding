@@ -1,3 +1,15 @@
+"""
+Problem:
+Ask the user for a vanity plate and print "Valid" or "Invalid". The plate must start with 2 letters and be 2 to 6 characters long. 
+Numbers can only come at the end and the first number cannot be 0. Spaces and punctuation are not allowed.
+
+Approach:
+I made an is_valid() function that returns True or False. First I check the length and that the first two characters are letters. 
+Then I loop through the plate and when I find a digit, I check that all the characters after it are digits too. I also check that the number does not start with 0. 
+At the end I use isalnum() to reject spaces and punctuation. In main() I print Valid or Invalid.
+"""
+
+
 def main():
     plate = input("Plate: ")
 
