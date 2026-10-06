@@ -1,3 +1,14 @@
+"""
+Problem:
+Ask the user for a fraction like "1/4" and print it as a percentage. If the percentage is 1 or less, print E. If it is 99 or more, print F.
+If the input is not valid, print nothing.
+
+Approach:
+I made a convert() function that splits the fraction at "/" and change both parts to int. If y is 0 it raises ZeroDivisionError.
+If x is negative or bigger than y it raises ValueError. Otherwise it returns the rounded percentage. The gauge() function returns E, F or the
+percentage with a % sign. In main() I use try/except and do nothing if the input is wrong.
+"""
+
 def main():
     fraction = input("Fraction: ")
 
