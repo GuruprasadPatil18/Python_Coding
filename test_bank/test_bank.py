@@ -1,3 +1,11 @@
+"""
+Problem:
+Write tests for the value() function in bank.py.
+
+Approach:
+I tested "hello" for 0, "hi" for 20 and "good morning" for 100. I also tested "HELLO" to check that capital letters don't change the result.
+"""
+
 from bank import value
 
 def test_hello():
