@@ -1,3 +1,12 @@
+"""
+Problem:
+Ask the user for a fruit name and print its calories. If the fruit is not in the list, print nothing.
+
+Approach:
+I made a dictionary with the fruit names and their calories. I took the input and used lower() so capital letters don't matter. 
+If the fruit is in the dictionary, I print its calories.
+"""
+
 fruits = {
     "apple": 130,
     "avocado": 50,
