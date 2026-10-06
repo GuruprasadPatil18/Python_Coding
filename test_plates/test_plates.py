@@ -1,3 +1,12 @@
+"""
+Problem:
+Write tests for is_valid() in plates.py.
+
+Approach:
+I tested a valid plate (GP18). Then I tested plates that are too short or too long, plates that don't start with two letters, a number that
+starts with 0, a letter after the number, and plates with a hyphen or a space.
+"""
+
 from plates import is_valid
 
 def test_valid():
