@@ -1,3 +1,13 @@
+"""
+Problem:
+Ask the user for a date like "9/8/1636" or "September 8, 1636" and print it as YYYY-MM-DD. If the date is not valid, ask again.
+
+Approach:
+I made a list of month names and used a while loop with try/except. If the input has "/" in it, I split it into month, day and year. 
+If not, I split it at the spaces and check that the month is in the list and the day ends with a comma. The month number is the index in the list plus 1. 
+I check that the month is 1 to 12 and the day is 1 to 31, else I ask again. Then I print the date and break the loop.
+"""
+
 months = [
     "January",
     "February",
